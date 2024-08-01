@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo-list.css">
+    <script defer src="todo-list.js"></script>
+    <title>Todo-list</title>
+</head>
+<body>
+    <div class="todo">
+        <div class="todo__input">
+          <input class="todo__text" type="text">
+          <span class="todo__add"></span>
+        </div>
+        <select class="todo__options">
+          <option value="active">активные</option>
+          <option value="completed">завершённые</option>
+          <option value="deleted">удалённые</option>
+        </select>
+        <ul class="todo__items" data-todo-option="active">
+            <li class="todo__item" data-todo-state="active">
+                <span class="todo__task">Текст задачи</span>
+                <span class="todo__action todo__action_restore" data-todo-action="active"></span>
+                <span class="todo__action todo__action_complete" data-todo-action="completed"></span>
+                <span class="todo__action todo__action_delete" data-todo-action="deleted"></span>
+            </li>
+        </ul>
+      </div>
+
+      
+</body>
+</html>
