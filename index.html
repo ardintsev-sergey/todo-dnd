@@ -10,7 +10,7 @@
 <body>
     <div class="todo">
         <div class="todo__input">
-          <input class="todo__text" type="text">
+          <input class="todo__text" type="text" placeholder='Текст задачи'>
           <span class="todo__add"></span>
         </div>
         <select class="todo__options">
@@ -19,7 +19,7 @@
           <option value="deleted">удалённые</option>
         </select>
         <ul class="todo__items" data-todo-option="active">
-            <li class="todo__item" data-todo-state="active">
+            <li class="todo__item" data-todo-state="active" draggable="true">
                 <span class="todo__task">Текст задачи</span>
                 <span class="todo__action todo__action_restore" data-todo-action="active"></span>
                 <span class="todo__action todo__action_complete" data-todo-action="completed"></span>
